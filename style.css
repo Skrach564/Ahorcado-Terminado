@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    /*background-color: #7DAA92;*/
+    background-image: url('img/otro\ fondo.jpg'); 
+}
+.container{
+    font: 16px;
+    background-color: white;
+    width: 50%;
+    height: 500px;
+    position: relative;
+    transform: translate(50%,8%);
+    padding: 1.5em;
+    border-radius:20px;
+    box-shadow: 0 1.2em 2.4em rgba(0, 0, 0, 0.25);
+}
+#options-container{
+    text-align: center;
+}
+#options-container div{
+    width: 100;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2em 0 2.4em 0;
+}
+#options-container button:disabled{
+    border: 0.5px solid black;
+    border-radius: 3px;
+    width: 65px;
+    height: 18px;
+    color:grey;
+    background-color: #efefef;
+}
+#options-container button:active{
+    background-color: #7DAA92;
+    border: 0.5px solid black;
+    border-radius: 3px;
+    width: 65px;
+    height: 18px;
+    color: white;
+}
+.letter-container{
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6em;
+    margin-top: 20px;
+    margin-left: 7.7px;
+}
+.letter-container button{
+    height: 2.4em;
+    width: 2.4em;
+    border-radius: 0.5em;
+    background-color: white;
+    cursor:pointer;
+}
+.new-game-popup{
+    background-color: white;
+    position: relative;
+    left: -23.85px;
+    top: 5px;
+    height: 30%;
+    width: 107.5%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#user-input-section{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    margin-top: 27px;
+    margin-bottom: 27px;
+    font-size: 1.5em;
+    margin: 0.6em 0 1.2 0; /* arriba, derecha, abajo, izq */
+}
+canvas{
+    display: block;
+    width: 45%;
+    height: 190px;
+    margin: auto;
+    border: 8px solid rgb(61, 61, 98);
+    border-radius: 15px;
+}
+.hide{
+    display: none;
+}
+#result.text h2{
+    font-size: 1.25em;
+    text-align: center;
+}
+#result-text p{
+    font-size: 1em;
+    margin: 1em 0 1 0; 
+}
+#result-text span{
+    font-weight: 600;
+}
+#new-game-button{
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+    background-color: #7DAA92;
+    color: white;
+    border: 2.5px solid black;
+    border-radius: 0.25em;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.win-msg{
+    color: green;
+}
+.lose-msg{
+    color:red;
+}
